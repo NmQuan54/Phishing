@@ -1,0 +1,122 @@
+* {  
+    box-sizing: border-box;  
+}  
+
+body {  
+    display: flex;  
+    justify-content: center;  
+    align-items: center;  
+    height: 100vh;  
+    margin: 0;  
+    background-color: #f1f1f1;  
+    font-family: 'Roboto', sans-serif;  
+}  
+
+.container {  
+    background-color: white;  
+    padding: 40px 30px;  
+    border-radius: 8px;  
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);  
+    text-align: center;  
+    width: 400px;  
+}  
+.red {  
+    color: #db4437; /* Màu đỏ */  
+}  
+
+.blue {  
+    color: #4285f4; /* Màu xanh dương */  
+}  
+
+.yellow {  
+    color: #f4b400; /* Màu vàng */  
+}  
+
+.green {  
+    color: #0f9d58; /* Màu xanh lá */  
+}
+.header h1 {  
+    font-size: 24px;  
+    text-align: center;  
+    letter-spacing: -3px;
+}  
+
+.header h1 span {  
+    font-weight: bold;  
+}  
+
+h2 {  
+    font-size: 20px;  
+    text-align: center;  
+    color: #333;  
+    margin: 20px 0;  
+}  
+
+p {  
+    text-align: center;  
+    color: #666;  
+    margin-bottom: 15px;  
+}  
+
+input[type="password"], input[type="text"] {  
+    width: 100%;  
+    padding: 10px;  
+    margin-top: 10px;  
+    margin-bottom: 20px;  
+    border: 1px solid #ccc;  
+    border-radius: 4px;  
+    font-size: 16px;  
+}  
+
+input[type="checkbox"] {  
+    margin-right: 5px;  
+}  
+
+.show-password {  
+    display: flex;  
+    align-items: center;  
+    justify-content: left;  
+}  
+
+.footer {  
+    display: flex;  
+    justify-content: space-between;  
+    align-items: center;  
+}  
+
+.footer button {  
+    background-color: #4285f4;  
+    color: white;  
+    border: none;  
+    padding: 10px 15px;  
+    border-radius: 4px;  
+    cursor: pointer;  
+    font-size: 16px;  
+}  
+
+.footer button:hover {  
+    background-color: #357ae8;  
+}  
+
+.link, .guest {  
+    text-align: center;  
+}  
+
+.link a, .guest a {  
+    color: #4285f4;  
+    text-decoration: none;  
+}  
+
+.link a:hover, .guest a:hover {  
+    text-decoration: underline;  
+}  
+
+.note {  
+    font-size: 12px;  
+    color: #888;  
+    margin-top: 10px;  
+}  
+
+.create-account {  
+    font-size: 14px;  
+}

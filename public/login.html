@@ -1,0 +1,50 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Sign in to Chrome</title>  
+    <link rel="stylesheet" href="styles1.css">  
+</head>  
+<body>  
+    <div class="container">  
+        <div class="header">  
+            <h1>  
+                <span class="red">G</span>  
+                <span class="blue">o</span>  
+                <span class="yellow">o</span>  
+                <span class="blue">g</span>  
+                <span class="green">l</span>  
+                <span class="red">e</span>  
+            </h1>  
+        </div>  
+        <h2>Sign in to Chrome</h2>  
+        <p>Use your Google Account</p>  
+        <form id="emailForm" onsubmit="return false;">  
+            <input type="text" placeholder="Email or phone" id="emailInput" required>  
+            <p class="link"><a href="#">Forgot email?</a></p>  
+            <div class="footer">  
+                <a href="#" class="create-account">Create account</a>  
+                <button type="button" onclick="nextPage()">Next</button> <!-- Sử dụng onclick để gọi hàm JavaScript -->  
+            </div>  
+        </form>  
+        <p class="note">Not your computer? Use Guest mode to sign in privately.</p>  
+        <p class="guest"><a href="#">Learn more about using Guest mode</a></p>  
+    </div>  
+
+    <script>  
+        function nextPage() {  
+            const emailInput = document.getElementById('emailInput').value;  
+            if (emailInput) {  
+                localStorage.setItem('email', emailInput); // Lưu email vào localStorage  
+                window.location.href = 'password.html'; // Chuyển tới trang nhập mật khẩu  
+            } else {  
+                alert("Please enter your email.");  
+            }  
+        }  
+
+        // Hàm signIn được sử dụng trong password.html   
+        // không được định nghĩa tại đây nhưng có thể thêm vào khi cần  
+    </script>  
+</body>  
+</html>
