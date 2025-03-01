@@ -1,9 +1,7 @@
-1 start file send_mail.py
+1 run file send_mail.py
    - thay đổi taget mail nạn nhân
-1. Start the server:
+2. Start the server:
     npm start
     ```
-6. Open your web browser and navigate to:
-    ```
-    http://localhost:3000/login.html
-    ```
+3. open mail, click vao "xac minh ngay".
+4. login email, check result 
